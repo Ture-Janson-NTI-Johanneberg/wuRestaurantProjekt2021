@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url('../img/crocodile-meat.jpeg');
+}
+
+/* index sida ------------------------------------------------------------------------------------------------------------------- */
+
+.container {
+    display: grid;
+    width: 98.9vw;
+    height: 200vh;
+    grid-template-areas: 
+    "he he"
+    "na na"
+    "se se"
+    "ma ma"
+    "a1 a2"
+    "fo fo"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.93fr 1fr 4fr 4fr 4fr 1fr;
+    grid-gap: 0px;
+}
+
+.header {
+    grid-area: he;
+    background-color:blue;
+    position: fixed;
+    height: 94px;
+    width: 100vw;
+}
+
+.nav {
+    grid-area: na;
+    background-color: red;
+}
+
+.section {
+    grid-area: se;
+    background-color: green;
+    opacity: 0%;
+}
+
+.main {
+    grid-area: ma;
+    background-color: green;
+}
+
+.article1 {
+    grid-area: a1;
+    background-color: yellow;
+}
+
+.article2 {
+    grid-area: a2;
+    background-color: orange;
+}
+
+.footer {
+    grid-area: fo;
+    background-color: pink;
+}
+
+/* Meny sida ------------------------------------------------------------------------------------------------------------- */
+
+.menu-container {
+    display: grid;
+    width: 98.9vw;
+    height: 150vh;
+    grid-template-areas: 
+    "he"
+    "na"
+    "ma"
+    "se"
+    "fo"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 5fr 4fr 1fr;
+    grid-gap: 0px;
+}
+
+.menu-header {
+    grid-area: he;
+    background-color:blue;
+    position: fixed;
+    height: 94px;
+    width: 100vw;
+}
+
+.menu-nav {
+    grid-area: na;
+    background-color: red;
+}
+
+.menu-main {
+    grid-area: ma;
+    background-color: green;
+}
+
+.menu-section {
+    grid-area: se;
+    background-color: yellow;
+}
+
+.menu-footer {
+    grid-area: fo;
+    background-color: pink;
+}
+
+/* About sida ---------------------------------------------------------------------------------------------------------------- */
+
+.about-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    "he he"
+    "na na"
+    "ma se"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 6fr;
+    grid-gap: 0px;
+}
+
+.about-header {
+    grid-area: he;
+    background-color:blue;
+    position: fixed;
+    height: 94px;
+    width: 100vw;
+}
+
+.about-nav {
+    grid-area: na;
+    background-color: red;
+}
+
+.about-main {
+    grid-area: ma;
+    background-color: green;
+}
+
+.about-section {
+    grid-area: se;
+    background-color: yellow;
+}
