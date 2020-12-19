@@ -28,9 +28,13 @@ body {
     grid-gap: 0px;
 }
 
+.logo {
+    margin: 6px;
+}
+
 .header {
     grid-area: he;
-    background-color:blue;
+    background-color: white;
     position: fixed;
     height: 94px;
     width: 100vw;
@@ -38,33 +42,63 @@ body {
 
 .nav {
     grid-area: na;
-    background-color: red;
+    background-color: #60a300;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .section {
     grid-area: se;
-    background-color: green;
     opacity: 0%;
 }
 
 .main {
     grid-area: ma;
-    background-color: green;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.h1 {
+    color: #60a300;
+    margin: 25px;
 }
 
 .article1 {
     grid-area: a1;
-    background-color: yellow;
+    background-color: #60a300;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.h3 {
+    color: white;
+    margin: 40px;
+}
+
+.text {
+    color: white;
+
 }
 
 .article2 {
     grid-area: a2;
-    background-color: orange;
+    background-color: #60a300;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .footer {
     grid-area: fo;
-    background-color: pink;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* Meny sida ------------------------------------------------------------------------------------------------------------- */
@@ -74,20 +108,20 @@ body {
     width: 98.9vw;
     height: 150vh;
     grid-template-areas: 
-    "he"
-    "na"
-    "ma"
-    "se"
-    "fo"
+    "he he"
+    "na na"
+    "ma at"
+    "se se"
+    "fo fo"
     ;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 5fr 4fr 1fr;
     grid-gap: 0px;
 }
 
 .menu-header {
     grid-area: he;
-    background-color:blue;
+    background-color:white;
     position: fixed;
     height: 94px;
     width: 100vw;
@@ -95,22 +129,45 @@ body {
 
 .menu-nav {
     grid-area: na;
-    background-color: red;
+    background-color: #60a300;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .menu-main {
     grid-area: ma;
-    background-color: green;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-article {
+    grid-area: at;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-item {
+    margin: auto;
 }
 
 .menu-section {
     grid-area: se;
     background-color: yellow;
+    opacity: 0%;
 }
 
 .menu-footer {
     grid-area: fo;
-    background-color: pink;
+    background-color: #60a300;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* About sida ---------------------------------------------------------------------------------------------------------------- */
@@ -131,23 +188,33 @@ body {
 
 .about-header {
     grid-area: he;
-    background-color:blue;
+    background-color:white;
     position: fixed;
     height: 94px;
     width: 100vw;
 }
 
+.h2 {
+    color: #60a300;
+    margin: 25px;
+}
+
 .about-nav {
     grid-area: na;
-    background-color: red;
+    background-color: #60a300;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .about-main {
     grid-area: ma;
-    background-color: green;
+    background-color: white;
+    text-align: center;
 }
 
 .about-section {
     grid-area: se;
-    background-color: yellow;
+    overflow: hidden;
 }
